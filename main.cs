@@ -11,18 +11,17 @@ class Program
     {
         Random random = new Random();
         int returnValue = random.Next(1, 6);
-        int Guess = 0;
+        int guess = 0;
         Console.WriteLine("Guess a number between 1-6.");
-        if (Guess != returnValue)
+        if (guess != returnValue)
         {
-            Guess = Convert.ToInt32(Console.Read());
-            Console.WriteLine("Try again! The answer was " + returnValue);
+            guess = Convert.ToInt32(Console.Read());
+            Console.WriteLine("Try again. The answer was " + returnValue);
             Console.ReadLine();
         }
-        if (Guess == returnValue)
+        if (guess == returnValue)
         {
-            Guess = Convert.ToInt32(Console.Read());
-            Console.WriteLine("Congratulations! The answer was " + returnValue);
+            Console.WriteLine("Congratulations. The answer was " + returnValue);
             Console.ReadLine();
         }
     }
